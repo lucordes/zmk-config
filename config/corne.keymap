@@ -31,7 +31,7 @@ default_layer {
 &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
    &kp TAB &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &kp SQT
    &kp LSHFT &kp Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &kp FSLH &kp RET
-                  &mo 3 &mo 1 &lt 2 SPACE   &mo 1 &lt 2 SPACE &kp RALT
+                  &mo 3 &mo 1 &lt 2 SPACE   &mo 1 &lt 2 SPACE &mo 3
             >;
         };
 
@@ -60,7 +60,7 @@ lower_layer {
             bindings = <
                 &none  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                        &none   &none   &none   &none   &none   &none
                 &none  &none  &trans &none           &none           &bt BT_CLR                          &none   &none   &none   &none   &none   &none
-                &none  &trans  &none           &none           &none           &trans                              &none   &none   &none   &none   &none   &none
+                &none  &reset  &bootloader           &none           &none           &trans                              &none   &none   &none   &bootloader   &reset   &none
                                                                         &trans          &trans          &trans      &trans  &trans  &trans
             >;
         };
