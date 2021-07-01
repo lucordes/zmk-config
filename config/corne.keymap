@@ -28,29 +28,38 @@
         compatible = "zmk,keymap";
 default_layer {
                bindings = <
-&gresc   &kp Q &kp W &hm LCTRL F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &kp TAB &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &kp SQT
-   &kp LSHFT &hm LSHFT Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &kp FSLH &kp RET
-                  &mo 3 &mo 1 &lt 2 SPACE   &mo 1 &lt 2 SPACE &mo 3
+&none   &lt 3 Q &kp W &hm LCTRL F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp BKSP    &none
+   &none &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &none
+   &none &hm LSHFT Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &kp FSLH &none
+                  &lt 2 TAB &mo 1 &kp SLHIFT   &kp LSHIFT &lt 2 SPACE &lt 1 TAB
             >;
         };
 
 
 lower_layer {
             bindings = <
-                &trans     &trans &kp C_AC_BACK      &kp UP     &kp C_AC_FORWARD      &trans     &trans      &trans     &trans      &trans     &trans      &trans    
-                &trans &trans  &kp LEFT    &kp DOWN    &kp RIGHT    &kp RET   &trans                       &trans     &trans   &trans     &trans    &trans       
-                 &trans  &kp C_MUTE        &kp C_VOL_DN    &kp C_VOL_UP       &kp BKSP       &trans            &trans    &trans   &kp C_PWR    &kp C_BRIGHTNESS_INC      &kp C_BRIGHTNESS_DEC    &trans
+                &trans     &trans &kp C_AC_BACK      &kp UP     &kp C_AC_FORWARD      &trans     &trans      &trans     &kp UP      &trans     &kp C_PAUSE      &trans    
+                &trans &trans  &kp LEFT    &kp DOWN    &kp RIGHT    &kp RET   &trans                      &kp LEFT     &kp DOWN   &kp RIGHT     &kp C_NEXT    &trans       
+                 &trans  &kp C_MUTE        &kp C_VOL_DN    &kp C_VOL_UP       &kp BKSP       &trans            &trans    &kp C_PWR   &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC      &kp C_PREV    &trans
                                           &trans      &trans  &trans      &trans  &trans  &trans
             >;
         };
 
        raise_layer {
             bindings = <
-                &kp F1       &kp F2      &kp F3      &kp F4      &kp F5     &kp F6                   &kp F7      &kp F8      &kp F9      &kp F10      &kp F11  &kp F12 
-                &trans  &kp N1       &kp N2          &kp N3          &kp N4      &kp N5                          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
-                &trans  &kp C_PREV   &kp C_VOL_DN    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &trans       &kp DOT    &trans       &none
+                &trans       &kp GRAVE      &trans      &trans      &trans     &trans                   &trans      &&trans    &kp SEMI           &kp QUOTE  &trans 
+                &trans  &kp N1       &kp N2          &kp N3          &kp N4      &kp N5                          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
+                &trans  &kp F1   &trans    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &trans       &kp DOT    &trans       &trans
                                                                     &trans      &trans      &trans      &trans  &trans      &trans
+            >;
+        };
+
+               funcc_layer {
+            bindings = <
+                &trans  &kp F12     &kp F7     &kp F8      &kp F9          &trans                   &trans      &trans      &trans      &trans      &trans  &trans 
+                &trans  &kp F11 &kp F4       &kp F5          &kp F6                &trans                         &trans     &trans   &trans     &trans      &trans      &trans
+                &trans  &kp F10 &kp F1  &kp F2    &kp F3      &kp BACKSLASH                        &trans   &trans   &trans       &kp DOT    &trans       &trans
+                                                                    &mo 4      &trans      &trans      &trans  &trans      &trans
             >;
         };
 
