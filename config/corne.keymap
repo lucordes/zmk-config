@@ -31,7 +31,7 @@ default_layer {
 &none   &lt 3 Q &kp W &hm LCTRL F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp BSPC    &none        
    &none &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &none
    &none &hm LSHFT Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &kp FSLH &none
-                  &lt 2 TAB &mo 1 &kp SLHIFT   &kp LSHIFT &lt 2 SPACE &lt 1 TAB
+                  &lt 2 TAB &mo 1 &kp LSHIFT   &kp LSHIFT &lt 2 SPACE &lt 1 TAB
             >;
         };
 
