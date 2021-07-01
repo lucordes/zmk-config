@@ -40,7 +40,7 @@ lower_layer {
             bindings = <
                 &trans     &trans &kp C_AC_BACK      &kp UP     &kp C_AC_FORWARD      &trans     &trans      &trans     &kp UP      &trans     &kp C_PAUSE      &trans    
                 &trans &trans  &kp LEFT    &kp DOWN    &kp RIGHT    &kp RET   &trans                      &kp LEFT     &kp DOWN   &kp RIGHT     &kp C_NEXT    &trans       
-                 &trans  &kp C_MUTE        &kp C_VOL_DN    &kp C_VOL_UP       &kp BKSP       &trans            &trans    &kp C_PWR   &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC      &kp C_PREV    &trans
+                 &trans  &kp C_MUTE        &kp C_VOL_DN    &kp C_VOL_UP       &kp BSPC       &trans            &trans    &kp C_PWR   &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC      &kp C_PREV    &trans
                                           &trans      &trans  &trans      &trans  &trans  &trans
             >;
         };
