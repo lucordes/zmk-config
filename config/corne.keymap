@@ -28,7 +28,7 @@
         compatible = "zmk,keymap";
 default_layer {
                bindings = <
-&none   &lt 3 Q &kp W &hm LCTRL F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp BKSP    &none
+&none   &lt 3 Q &kp W &hm LCTRL F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp BKSP    &none        
    &none &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &none
    &none &hm LSHFT Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &kp FSLH &none
                   &lt 2 TAB &mo 1 &kp SLHIFT   &kp LSHIFT &lt 2 SPACE &lt 1 TAB
@@ -47,14 +47,14 @@ lower_layer {
 
        raise_layer {
             bindings = <
-                &trans       &kp GRAVE      &trans      &trans      &trans     &trans                   &trans     &trans    &kp SEMI           &kp SQT  &trans 
+                &trans       &kp GRAVE      &trans      &trans      &trans     &trans                   &trans     &trans    &kp SEMI           &kp SQT  &trans &trans
                 &trans  &kp N1       &kp N2          &kp N3          &kp N4      &kp N5                          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
                 &trans  &kp F1   &trans    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &trans       &kp DOT    &trans       &trans
                                                                     &trans      &trans      &trans      &trans  &trans      &trans
             >;
         };
 
-               funcc_layer {
+               func_layer {
             bindings = <
                 &trans  &kp F12     &kp F7     &kp F8      &kp F9          &trans                   &trans      &trans      &trans      &trans      &trans  &trans 
                 &trans  &kp F11 &kp F4       &kp F5          &kp F6                &trans                         &trans     &trans   &trans     &trans      &trans      &trans
