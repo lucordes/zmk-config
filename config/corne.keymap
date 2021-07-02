@@ -28,7 +28,7 @@
         compatible = "zmk,keymap";
 default_layer {
                bindings = <
-&none   &hm GRAVE Q &kp W &hm LCTRL F &kp P &lt 3 B   &kp J &kp L  &kp U     &kp Y   &kp BSPC    &none        
+&none   &hm GRAVE Q &kp W &hm LCTRL F &kp P &lt 3 B   &kp J &kp L  &kp U     &hm SEMI Y   &kp BSPC    &none        
    &none &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &none
    &none &hm LSHFT Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &hm LSHFT FSLH &none
                   &lt 2 TAB &mo 1 &kp LSHIFT   &kp LSHIFT &lt 2 SPACE &lt 1 TAB
@@ -49,7 +49,7 @@ lower_layer {
             bindings = <
                 &trans       &kp F1  &kp F2    &kp F3      &kp F4  &kp F5    &kp F6     &kp F7  &kp F8    &kp F9  &kp F10 &trans
                 &trans  &kp N1       &kp N2          &kp N3          &kp N4      &kp N5                          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
-                &trans  &kp F11   &kp F12    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &kp SEMI       &kp SQT    &kp GRAVE       &trans
+                &trans  &kp F11   &kp F12    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &kp SQT       &trans    &trans      &trans
                                                                     &trans      &trans      &trans      &trans  &trans      &trans
             >;
         };
