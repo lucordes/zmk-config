@@ -30,8 +30,8 @@ default_layer {
                bindings = <
 &none   &hm ESC Q &hm GRAVE W &hm LCTRL F &kp P &lt 3 B   &kp J &kp L  &hm SEMI U    &hm SQT Y   &kp BSPC    &none        
    &none &hm LCTRL A &hm LGUI R &hm LALT S &hm LSHFT T &hm RET G   &hm RET M &hm LSHFT N &hm LALT E &hm LGUI I &hm LCTRL O &none
-   &none &hm LSHFT Z &kp X &hm LCTRL C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &hm LSHFT FSLH &none
-                  &lt 2 TAB &lt 1 TAB &kp LSHIFT   &kp LSHIFT &lt 2 SPACE &lt 1 TAB
+   &none &hm LSHFT Z &kp X &lt 2 C &hm LALT D &kp V   &kp K &hm RALT H  &kp COMMA &kp DOT &hm LSHFT FSLH &none
+                  &none &lt 1 TAB &kp LSHIFT   &kp LSHIFT &lt 2 SPACE &none
             >;
         };
 
@@ -47,9 +47,9 @@ lower_layer {
 
        raise_layer {
             bindings = <
-                &trans       &kp F1  &kp F2    &kp F3      &kp F4  &kp F5    &kp F6     &kp F7  &kp F8    &kp F9  &kp F10 &trans
+                &trans       &hm F11 F1  &hm F12 F2    &kp F3      &kp F4  &kp F5    &kp F6     &kp F7  &kp F8    &kp F9  &kp F10 &trans
                 &trans  &kp N1       &kp N2          &kp N3          &kp N4      &kp N5                          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
-                &trans  &kp F11   &kp F12    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &trans       &trans    &trans      &trans
+                &trans  &trans   &trans    &kp LBKT    &kp RBKT  &kp BACKSLASH                        &kp MINUS   &kp EQUAL   &trans       &trans    &trans      &trans
                                                                     &trans      &trans      &trans      &trans  &trans      &trans
             >;
         };
