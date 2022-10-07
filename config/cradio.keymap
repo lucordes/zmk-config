@@ -47,6 +47,14 @@ macros {
         tap-ms = <1>;
         bindings = <&kp S &kp C>;
     };
+    capssc: capssc {
+        compatible = "zmk,behavior-macro";
+        label = "capssc";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+        bindings = <&kp LS(S) &kp C>;
+    };
     };
 
 
@@ -155,6 +163,15 @@ combos {
 
   behaviors {
 
+
+        capSandlowc: capSandlowc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "capSandlowc";
+            #binding-cells = <0>;
+            bindings = <&sc>, <&capssc>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+   
 
  hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
