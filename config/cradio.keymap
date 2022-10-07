@@ -139,7 +139,7 @@ combos {
         combo_sc {
             timeout-ms = <25>;
             key-positions = <12 22>;
-            bindings = <&sc>;
+            bindings = <&capSandlowc>;
         };
         combo_ecomma {
             timeout-ms = <25>;
