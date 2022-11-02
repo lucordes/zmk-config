@@ -53,7 +53,7 @@ macros {
         #binding-cells = <0>;
         wait-ms = <1>;
         tap-ms = <1>;
-        bindings = <&kp CAPS &kp S &kp CAPS &kp C>;
+        bindings = <&kp S &kp CAPS &kp C &kp CAPS >;
     };
     };
 
@@ -139,7 +139,7 @@ combos {
         combo_sc {
             timeout-ms = <25>;
             key-positions = <12 22>;
-            bindings = <&sc>;
+            bindings = <&capSandlowc>;
         };
         combo_ecomma {
             timeout-ms = <25>;
