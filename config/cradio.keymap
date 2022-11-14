@@ -92,12 +92,12 @@ combos {
             bindings = <&kp LS(BACKSLASH)>;
         };
         combo_semic {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <2 7>;
             bindings = <&kp LS(COMMA)>;
         };
         combo_double {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <1 8>;
             bindings = <&kp LS(DOT)>;
         };
