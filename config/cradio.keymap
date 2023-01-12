@@ -83,7 +83,7 @@ combos {
         };
         combo_quote {
             timeout-ms = <50>;
-            key-positions = <17 18 19>;
+            key-positions = <8 18>;
             bindings = <&kp LS(N2)>;
         };
         combo_apostroph {
@@ -93,12 +93,12 @@ combos {
         };
         combo_semic {
             timeout-ms = <50>;
-            key-positions = <6 8>;
+            key-positions = <6 16>;
             bindings = <&kp LS(COMMA)>;
         };
         combo_double {
             timeout-ms = <50>;
-            key-positions = <1 3>;
+            key-positions = <3 13>;
             bindings = <&kp LS(DOT)>;
         };
         combo_ae {
@@ -201,7 +201,7 @@ combos {
     base_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J         &kp L         &kp U         &kp Z    &hm1 LC(BSPC) BSPC
+                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J         &kp L         &kp U         &kp Z    &hm1 BSPC LC(BSPC)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &hm LCTRL A    &hm LGUI R    &hm RET S    &hm LALT T    &hm MINUS G          &kp M      &hm RSHFT N    &hm LALT E    &hm LGUI I   &hm RCTRL O
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
