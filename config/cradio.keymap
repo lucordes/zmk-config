@@ -31,6 +31,16 @@
 
 / {
 
+ 
+  conditional_layers {
+      compatible = "zmk,conditional-layers";
+      tri_layer {
+          if-layers = <NAV NUM>;
+          then-layer = <SYM>;
+      };
+  };
+
+
 macros {
          ecomma: ecomma {
         compatible = "zmk,behavior-macro";
