@@ -255,9 +255,9 @@ combos {
     sym_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp LA(Q)      &kp NUHS      &kp NUBS     &kp LS(NUBS)   &kp GRAVE            ___       &kp RA(N8)    &kp RA(N9)     &kp EQUAL   &kp LS(EQUAL)
+             &kp LA(Q)   &kp NON_US_HASH &kp NON_US_BACKSLASH &kp LS(NON_US_BACKSLASH) &kp GRAVE &kp RA(NON_US_BACKSLASH) &kp RA(N8)    &kp RA(N9)     &kp EQUAL   &kp LS(EQUAL)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &kp LS(N7)    &kp LS(RBKT)   &kp SLASH      &kp RBKT   &kp LS(SLASH)          ___       &kp LS(N8)    &kp LS(N9)     &kp RA(N7)    &kp RA(N0)
+             &kp LS(N7)    &kp LS(RBKT)   &kp SLASH      &kp RBKT   &kp LS(SLASH)      &kp RA(RBKT)   &kp LS(N8)    &kp LS(N9)     &kp RA(N7)    &kp RA(N0)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp LS(N1)    &kp LS(N0)     &kp LS(N6)    &kp LS(N5)       ___               ___      &kp RA(MINUS)      ___           ___           ___
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
