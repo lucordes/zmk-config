@@ -25,8 +25,8 @@
 #define BASE 0
 #define NAV 1
 #define SYM 2
-#define ADJ 3
 #define NUMPAD 4
+#define ADJ 3
 
 / {
 
