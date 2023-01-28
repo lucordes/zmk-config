@@ -183,14 +183,6 @@ combos {
             bindings = <&kp>, <&kp>;
         };
 
-      hm1: homerow_mods1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "hm1";
-            #binding-cells = <2>;
-            tapping_term_ms = <100>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
 
     
   };
@@ -201,7 +193,7 @@ combos {
     base_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J   &hm C_AC_SEARCH L    &kp U         &kp Z    &hm1 BSPC LC(BSPC)
+                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J   &hm C_AC_SEARCH L    &kp U        &kp Z      &kp LC(BSPC)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &hm LCTRL A    &hm LGUI R    &hm RET S    &hm LALT T    &hm MINUS G          &kp M      &hm RSHFT N    &hm LALT E    &hm LGUI I   &hm RCTRL O
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
