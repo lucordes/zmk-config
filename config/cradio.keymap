@@ -94,12 +94,12 @@ combos {
         combo_semic {
             timeout-ms = <50>;
             key-positions = <6 16>;
-            bindings = <&kp LS(COMMA)>;
+            bindings = <&kp N6>;
         };
         combo_double {
             timeout-ms = <50>;
             key-positions = <3 13>;
-            bindings = <&kp LS(DOT)>;
+            bindings = <&kp N5>;
         };
         combo_ae {
             timeout-ms = <25>;
