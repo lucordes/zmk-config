@@ -28,6 +28,12 @@
 #define NUMPAD 3 
 #define ADJ 4
 
+&sk {
+    release-after-ms = <100>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 / {
 
 macros {
@@ -186,11 +192,6 @@ combos {
 
     
   };
-  &sk {
-    release-after-ms = <2000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-  };
 
   keymap {
     compatible = "zmk,keymap";
@@ -204,7 +205,7 @@ combos {
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &lt NUMPAD Y   &hm LALT X      &kp C      &hm LCTRL D   &hm LA(F4) V         &kp K      &hm RALT H     &kp COMMA     &kp DOT    &hm LS(N7) LS(MINUS)
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                       &lt NAV TAB   &sk LSHFT          &lt SYM SPC   &lt SYM SPC
+                                                       &lt NAV TAB   &kp LSHFT          &lt SYM SPC   &lt SYM SPC
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
