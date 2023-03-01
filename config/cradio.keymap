@@ -28,11 +28,6 @@
 #define NUMPAD 3 
 #define ADJ 4
 
-&sk {
-    release-after-ms = <1000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
 
 / {
 
