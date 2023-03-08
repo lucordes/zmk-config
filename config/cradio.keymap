@@ -90,7 +90,7 @@ combos {
         compatible = "zmk,combos";
         combo_dot_spc{
             timeout-ms = <40>;
-            key-positions = <31 32>;
+            key-positions = <30 31 32>;
             bindings = <&dot_spc>;
         };
         combo_pwr {
