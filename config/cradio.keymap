@@ -182,7 +182,7 @@ combos {
 
     spc_morph: spc_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_SHIFT";
+            label = "spc_morph";
             #binding-cells = <0>;
             bindings = <&kp SPC>, <&kp dot_spc>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
