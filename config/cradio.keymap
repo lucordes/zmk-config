@@ -184,7 +184,7 @@ combos {
             compatible = "zmk,behavior-mod-morph";
             label = "spc_morph";
             #binding-cells = <0>;
-            bindings = <&kp SPC>, <&kp dot_spc>;
+            bindings = <&kp SPC>, <&dot_spc>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
