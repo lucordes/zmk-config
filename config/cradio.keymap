@@ -88,6 +88,11 @@ combos {
               ╰────────╯ ╰────────╯            */
 
         compatible = "zmk,combos";
+        combo_dot_spc{
+            timeout-ms = <40>;
+            key-positions = <31 32>;
+            bindings = <&dot_spc>;
+        };
         combo_pwr {
             timeout-ms = <50>;
             key-positions = <0 4>;
@@ -180,14 +185,6 @@ combos {
 
   behaviors {
 
-    spc_morph: spc_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "spc_morph";
-            #binding-cells = <0>;
-            bindings = <&kp SPC>, <&dot_spc>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
 
         capSandlowc: capSandlowc {
             compatible = "zmk,behavior-mod-morph";
@@ -207,6 +204,8 @@ combos {
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        
+ 
 
 
     
