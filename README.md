@@ -2,7 +2,8 @@
 
 <div align="center">
   
-  ![sweep-layout](https://user-images.githubusercontent.com/31887821/215075901-711f6f2a-7634-48f7-95fa-5c06cfc8132f.png)
+  ![layout](https://user-images.githubusercontent.com/31887821/230069543-784e3a2d-f912-451d-80cf-ee8a550b3cba.png)
+
 
 </div>
 
