@@ -201,7 +201,7 @@ combos {
     base_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J   &hm C_AC_SEARCH L    &kp U        &kp Z      &kp LC(BSPC)
+                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J   &hm C_AC_SEARCH L    &kp U      &hm ESC Z    &kp LC(BSPC)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &hm LCTRL A    &hm LGUI R    &hm RET S    &hm LALT T    &hm MINUS G          &kp M      &hm RSHFT N    &hm LALT E    &hm LGUI I   &hm RCTRL O
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
