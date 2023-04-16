@@ -38,6 +38,67 @@
         tap-ms = <10>;
         bindings = <&kp A>;
     )
+    ZMK_MACRO(m_r,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp R>;
+    )
+    ZMK_MACRO(m_w,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp W>;
+    )
+    ZMK_MACRO(m_s,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp S>;
+    )
+    ZMK_MACRO(m_t,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp T>;
+    )
+    ZMK_MACRO(m_x,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp X>;
+    )
+    ZMK_MACRO(m_d,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp D>;
+    )
+    ZMK_MACRO(m_g,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp G>;
+    )
+    ZMK_MACRO(m_h,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp H>;
+    )
+    ZMK_MACRO(m_n,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp N>;
+    )
+    ZMK_MACRO(m_e,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp E>;
+    )
+    ZMK_MACRO(m_i,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp I>;
+    )
+    ZMK_MACRO(m_o,
+        wait-ms = <1>;
+        tap-ms = <10>;
+        bindings = <&kp O>;
+    )
+
 
 macros {
  
