@@ -271,7 +271,7 @@ hmw: homerow_modsw {
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&m_>;
+            bindings = <&kp>, <&m_w>;
         };
 hmf: homerow_modsf {
             compatible = "zmk,behavior-hold-tap";
