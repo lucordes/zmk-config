@@ -307,7 +307,7 @@ hmt: homerow_modst {
             flavor = "tap-preferred";
             bindings = <&kp>, <&m_t>;
         };
-hmg: homerow_modsw {
+hmg: homerow_modsg {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODSg";
             #binding-cells = <2>;
