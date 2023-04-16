@@ -408,7 +408,7 @@ hm: homerow_mods {
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                  &kp Q      &hmw ESC W   &hmf LSHIFT F    &kp P         &kp B             &kp J          &kp L        &kp U      &hmz ESC Z    &kp LC(BSPC)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &hma LCTRL A    &hmr LGUI R   &hmr RET S   &hmt LALT T   &hmg MINUS G         &kp M     &hmn RSHFT N  &hme LALT E   &hmi LGUI I   &hmo RCTRL O
+            &hma LCTRL A    &hmr LGUI R   &hms RET S   &hmt LALT T   &hmg MINUS G         &kp M     &hmn RSHFT N  &hme LALT E   &hmi LGUI I   &hmo RCTRL O
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &lt NUMPAD Y  &hmx LALT X      &kp C      &hmd LCTRL D  &hmv LA(F4) V        &kp K      &hmh RALT H    &kp COMMA     &kp DOT     &kp LS(MINUS)
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
