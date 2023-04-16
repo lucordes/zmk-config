@@ -39,69 +39,79 @@
         bindings = <&kp A>;
     )
     ZMK_MACRO(m_r,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp R>;
     )
     ZMK_MACRO(m_w,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp W>;
     )
     ZMK_MACRO(m_f,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp F>;
     )
     ZMK_MACRO(m_s,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp S>;
     )
     ZMK_MACRO(m_t,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp T>;
     )
     ZMK_MACRO(m_x,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp X>;
     )
     ZMK_MACRO(m_d,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp D>;
     )
+    ZMK_MACRO(m_v,
+        wait-ms = <0>;
+        tap-ms = <20>;
+        bindings = <&kp V>;
+    )
     ZMK_MACRO(m_g,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp G>;
     )
     ZMK_MACRO(m_h,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp H>;
     )
     ZMK_MACRO(m_n,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp N>;
     )
     ZMK_MACRO(m_e,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp E>;
     )
     ZMK_MACRO(m_i,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp I>;
     )
     ZMK_MACRO(m_o,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp O>;
+    )
+    ZMK_MACRO(m_z,
+        wait-ms = <0>;
+        tap-ms = <20>;
+        bindings = <&kp Z>;
     )
 
 
@@ -281,20 +291,94 @@ hmf: homerow_modsf {
             flavor = "tap-preferred";
             bindings = <&kp>, <&m_f>;
         };
-    
-
- hm: homerow_mods {
+hms: homerow_modss {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODSs";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
-            quick_tap_ms = <1>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&m_s>;
         };
-        
- 
-
+hmt: homerow_modst {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSt";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_t>;
+        };
+hmg: homerow_modsw {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSg";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_g>;
+        };
+hmd: homerow_modsd {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSd";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_d>;
+        };
+hmv: homerow_modsv {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSv";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_v>;
+        };
+hmh: homerow_modsh {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSh";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_h>;
+        };
+hmn: homerow_modsn {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSn";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_n>;
+        };
+hme: homerow_modse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSe";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_e>;
+        };    
+hmi: homerow_modsi {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSi";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_i>;
+        };
+hmo: homerow_modso {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSo";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_o>;
+        };
+hmz: homerow_modsz {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSz";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_z>;
+        };
 
     
   };
@@ -305,11 +389,11 @@ hmf: homerow_modsf {
     base_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp Q      &hmw ESC W   &hmf LSHIFT F    &kp P         &kp B             &kp J          &kp L        &kp U      &hm ESC Z    &kp LC(BSPC)
+                 &kp Q      &hmw ESC W   &hmf LSHIFT F    &kp P         &kp B             &kp J          &kp L        &kp U      &hmz ESC Z    &kp LC(BSPC)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &hma LCTRL A    &hmr LGUI R    &hm RET S    &hm LALT T    &hm MINUS G          &kp M      &hm RSHFT N    &hm LALT E    &hm LGUI I   &hm RCTRL O
+            &hma LCTRL A    &hmr LGUI R   &hmr RET S   &hmt LALT T   &hmg MINUS G         &kp M     &hmn RSHFT N  &hme LALT E   &hmi LGUI I   &hmo RCTRL O
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &lt NUMPAD Y   &hm LALT X      &kp C      &hm LCTRL D   &hm LA(F4) V         &kp K      &hm RALT H     &kp COMMA     &kp DOT    &kp LS(MINUS)
+             &lt NUMPAD Y  &hmx LALT X      &kp C      &hmd LCTRL D  &hmv LA(F4) V        &kp K      &hmh RALT H    &kp COMMA     &kp DOT     &kp LS(MINUS)
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        &lt NAV TAB   &kp LSHFT          &lt SYM SPC   &lt SYM SPC
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
