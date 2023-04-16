@@ -34,8 +34,8 @@
 
 / {
   ZMK_MACRO(m_a,
-        wait-ms = <1>;
-        tap-ms = <10>;
+        wait-ms = <0>;
+        tap-ms = <20>;
         bindings = <&kp A>;
     )
     ZMK_MACRO(m_r,
