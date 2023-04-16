@@ -183,7 +183,16 @@ combos {
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
    
-
+hma: homerow_modsa {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODSa";
+            #binding-cells = <1>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <1>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&m_a>;
+        };
+        
  hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -206,11 +215,11 @@ combos {
     base_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp Q      &hm ESC W    &hm LSHFT F   &hm SPACE P   &hm GRAVE B          &kp J          &kp L        &kp U      &hm ESC Z    &kp LC(BSPC)
+                 &kp Q      &hm ESC W       &kp F      &kp P         &kp B             &kp J          &kp L        &kp U      &hm ESC Z    &kp LC(BSPC)
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &hm LCTRL m_a  &hm LGUI R    &hm RET S    &hm LALT T    &hm MINUS G          &kp M      &hm RSHFT N    &hm LALT E    &hm LGUI I   &hm RCTRL O
+             &hma LCTRL     &hm LGUI R    &hm RET S    &hm LALT T    &hm MINUS G          &kp M      &hm RSHFT N    &hm LALT E    &hm LGUI I   &hm RCTRL O
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &lt NUMPAD Y   &hm LALT X      &kp C      &hm LCTRL D   &hm LA(F4) V         &kp K      &hm RALT H     &kp COMMA     &kp DOT    &hm LS(N7) LS(MINUS)
+             &lt NUMPAD Y   &hm LALT X      &kp C      &hm LCTRL D   &hm LA(F4) V         &kp K      &hm RALT H     &kp COMMA     &kp DOT    &kp LS(MINUS)
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        &lt NAV TAB   &kp LSHFT          &lt SYM SPC   &lt SYM SPC
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -235,7 +244,7 @@ combos {
     sym_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp F11       &kp F12   &kp NON_US_HASH &kp NON_US_BACKSLASH ___            ___    &hm RA(N8) RA(N7) &hm RA(N9) RA(N0) &kp RA(MINUS) ___
+               &kp F11       &kp F12   &kp NON_US_HASH &kp NON_US_BACKSLASH &kp GRAVE      ___    &hm RA(N8) RA(N7) &hm RA(N9) RA(N0) &kp RA(MINUS) ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1    &hm F2 N2    &hm F3 N3      &hm F4 N4        ___               ___      &hm F7 N7    &hm F8 N8    &hm F9 N9     &hm F10 N0
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
