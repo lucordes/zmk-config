@@ -365,8 +365,8 @@ rect.held, rect.combo.held {
   opacity: 1.0;
 }
 </style>
-<g transform="translate(30, 0)" class="layer-DEF">
-<text x="0" y="28" class="label" id="DEF">DEF</text>
+<g transform="translate(30, 0)" class="layer-Default Layer">
+<text x="0" y="28" class="label" id="Default-Layer">Default Layer</text>
 <g transform="translate(0, 56)">
 <g transform="translate(92, 45)" class="key keypos-0">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key side"/>
