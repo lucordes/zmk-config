@@ -134,7 +134,6 @@
         COMBO(caret,     &kp DE_CARET,   RT0 RT1,     DEF,     COMBO_TERM_MID,  200)
         COMBO(qt_grv,    &qt_grv,        RB1 RM0,     DEF,     COMBO_TERM_MID,  200)
 #endif
-
       
     };
 };
