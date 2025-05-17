@@ -61,18 +61,19 @@
             timeout-ms = <50>;
             key-positions = <3 13>;
             bindings = <&kp N5>;
+            layers = <BASEUSINT BASEUS BASEDE SYMUSINT SYMUS SYMDE>;
         };
             combo_sixde {
             timeout-ms = <50>;
             key-positions = <6 16>;
             bindings = <&kp N6>;
-            layers = <BASEDE SYMDE BASEIT SYMIT>;
+            layers = <BASEUSINT BASEUS BASEDE SYMUSINT SYMUS SYMDE>;
         };
             combo_sixus {
             timeout-ms = <50>;
             key-positions = <6 16>;
             bindings = <&number6us>; // LS(6)->&
-            layers = <BASEUSINT BASEUS SYMUSINT SYMUS>;
+            layers = <BASEUSINT BASEUS BASEDE SYMUSINT SYMUS SYMDE>;
         };
             combo_up {
             timeout-ms = <arrowcombotime>;
@@ -710,29 +711,17 @@ macros {
 game_layer {
   bindings = <
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp N2       &kp Q        &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I        &kp O      
+            &kp ECS       &kp N1        &kp W         &kp N2         &kp F         &kp T             &kp Y         &kp U         &kp I        &kp O      
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &kp N1       &kp A        &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K        &kp L                 
+          &kp LSHFT       &kp A        &kp S         &kp D         &kp F5         &kp G             &kp H         &kp J         &kp K        &kp L                 
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &kp LSHFT      &kp Z        &kp X         &kp C         &kp V         &tog QWERTY       &kp N         &kp M         &kp COMMA    &kp DOT   
+           &kp LCTRL      &kp N3        &kp N4         &kp N5         &kp F3              &kp B       &kp N         &kp M         &kp COMMA    &kp DOT   
     // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                  &kp TAB      &kp SPACE        &tog GAME     &kp ENTER
     //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
   >;
 };
-qwerty_layer {
-  bindings = <
-    // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp Q        &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I        &kp O       &kp BSPC
-    // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &kp A        &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K        &kp L         &kp SEMICOLON
-    // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &kp Z        &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA    &kp DOT       &kp SLASH
-    // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                 &kp TAB      &kp LSHIFT        &kp SPC     &kp ENTER
-    //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-  >;
-};
+
 
   };
 };
