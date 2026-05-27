@@ -19,6 +19,7 @@
 #include "keys_de.h"
 #include "keys_it.h"
 #include "keys_us_international.h"
+#include "leader.dtsi"
 
 
 #include <zmk-unicode/keys-full.h>   // All glyphs including CJK
@@ -601,7 +602,7 @@ macros {
       symusint_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp AT    &kp EN_A_UMLAUT &kp EN_U_UMLAUT    ___      &kp CARET      &td_bracketus   &td_braceus     &td_parenus     &kp BACKSLASH     ___
+               &kp AT    &kp EN_A_UMLAUT &kp EN_U_UMLAUT  &leader      &kp CARET      &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1   &number2us    &number3us     &number4us   &kp EN_SHARP_S &td_lessgreaterus &number7us    &number8us   &number9us     &number0us
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
