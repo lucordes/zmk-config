@@ -15,9 +15,9 @@
     };
 
 /* German umlauts */
-ZMK_LEADER_SEQUENCE(de_ae,      &kp EN_A_UMLAUT,        W A)  // ä
-ZMK_LEADER_SEQUENCE(de_oe,      &kp EN_O_UMLAUT,        W O)  // ö
-ZMK_LEADER_SEQUENCE(de_ue,      &kp EN_U_UMLAUT,        W U)  // ü
+ZMK_LEADER_SEQUENCE(w_de_ae,      &kp EN_A_UMLAUT,        W A)  // ä //for windows
+ZMK_LEADER_SEQUENCE(w_de_oe,      &kp EN_O_UMLAUT,        W O)  // ö
+ZMK_LEADER_SEQUENCE(w_de_ue,      &kp EN_U_UMLAUT,        W U)  // ü
 ZMK_LEADER_SEQUENCE(de_ae,      &uc UC_DE_AE,         A)  // ä
 ZMK_LEADER_SEQUENCE(de_oe,      &uc UC_DE_OE,         O)  // ö
 ZMK_LEADER_SEQUENCE(de_ue,      &uc UC_DE_OE,         U)  // ü
