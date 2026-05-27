@@ -155,6 +155,16 @@
 //macros
 
 macros {
+        usintl: usintl { //setxkbmap us intl
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = 
+                , <&macro_tap &kp S &kp E &kp T &kp X &kp K &kp B &kp M &kp A &kp P>
+                , <&macro_tab &kp SPACE>
+                , <&macro_tab &kp U &kp S &SPACE &kp I &kp N &kp T &kp L>
+                ;
+        };
             //[]
     bracketde: bracketde {
     compatible = "zmk,behavior-macro";
@@ -677,7 +687,7 @@ macros {
     adjust_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 XXX       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &out OUT_TOG      &studio_unlock     XXX           XXX           XXX           XXX
+                 XXX       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &out OUT_TOG      &studio_unlock  &usintl          XXX           XXX           XXX
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
               &kp CAPS     &bt BT_SEL 3 &bt BT_SEL 4       XXX        &bt BT_CLR       &tog GAME         XXX           XXX           XXX           XXX
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
