@@ -126,12 +126,12 @@
         combo_lead_left {
             timeout-ms = <10>;
             key-positions = <2 12>;
-            bindings = <&leaer>;
+            bindings = <&leader>;
         };
         combo_lead {
             timeout-ms = <10>;
             key-positions = <7 17>;
-            bindings = <&leaer>;
+            bindings = <&leader>;
         };
       
 
