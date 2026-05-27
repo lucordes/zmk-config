@@ -123,31 +123,17 @@
             key-positions = <16 17>;
             bindings = <&kp LEFT>;
         };
-
-            combo_sqtus {
+        combo_lead_left {
             timeout-ms = <10>;
             key-positions = <2 12>;
-            layers = <BASEUS SYMUS>;
-            bindings = <&kp SQT>;
+            bindings = <&leaer>;
         };
-            combo_sqtusint {
+        combo_lead {
             timeout-ms = <10>;
-            key-positions = <2 12>;
-            layers  = <BASEUSINT SYMUSINT>;
-            bindings = <&sqtspace>;
+            key-positions = <7 17>;
+            bindings = <&leaer>;
         };
-            combo_sqtde {
-            timeout-ms = <10>;
-            key-positions = <2 12>;
-            layers = <BASEDE SYMDE>;
-            bindings = <&kp DE_SQT>;
-        };
-            combo_sqtit {
-            timeout-ms = <10>;
-            key-positions = <2 12>;
-            layers = <BASEIT SYMIT>;
-            bindings = <&kp IT_SQT>;
-        };
+      
 
     };
 
