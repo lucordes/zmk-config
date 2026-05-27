@@ -26,7 +26,7 @@
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Default to Linux input system
   minimum-length = <0>;            // Set to desired minimum input length
-  linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
+  // this is the default linux-key = <LC(LS(U))>;         // Overwrite Linux compose key
 };
 
 
@@ -588,11 +588,11 @@ macros {
       symusint_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp AT    &kp EN_A_UMLAUT &kp EN_U_UMLAUT  &leader      &kp CARET      &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
+               &kp AT           ___          ___           ___        &kp CARET      &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1   &number2us    &number3us     &number4us   &kp EN_SHARP_S &td_lessgreaterus &number7us    &number8us   &number9us     &number0us
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-            &kp EN_O_UMLAUT &kp F11        &kp F12   &timesusint         ___          &tickusint   &hm PIPE MINUS     ___           ___           ___
+                ___          &kp F11        &kp F12   &timesusint         ___          &tickusint   &hm PIPE MINUS     ___           ___           ___
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                            ___           ___               ___          ___
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
