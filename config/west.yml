@@ -8,6 +8,9 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: urob
       url-base: https://github.com/urob
+    - name: zmk-leader-key
+      path: modules/zmk/leader-key
+      revision: 749f7faf65cc4105c82fbe64cfaa7e09a8a63605 # main (4/19/2026)
   projects:
     - name: zmk
       remote: zmkfirmware
