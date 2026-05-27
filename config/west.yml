@@ -15,7 +15,7 @@ manifest:
     - name: zmk-unicode
       remote: urob
     - name: zmk-leader-key
-      path: modules/zmk/leader-key
+      remote: urob
       revision: 749f7faf65cc4105c82fbe64cfaa7e09a8a63605 # main (4/19/2026)
   self:
     path: config
