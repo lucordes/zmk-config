@@ -162,7 +162,7 @@ macros {
                 = 
                 , <&macro_tap &kp S &kp E &kp T &kp X &kp K &kp B &kp M &kp A &kp P>
                 , <&macro_tab &kp SPACE>
-                , <&macro_tab &kp U &kp S &SPACE &kp I &kp N &kp T &kp L>
+                , <&macro_tab &kp U &kp S &kp SPACE &kp I &kp N &kp T &kp L>
                 ;
         };
             //[]
