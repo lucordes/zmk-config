@@ -243,7 +243,14 @@ macros {
         ;
     };
             // grave space`
-    gravespace: gravespace {
+    backtick: backtick {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+        = <&macro_tap &kp GRAVE &kp SPC> 
+        ;
+    };
+    caretspace: caretspace {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings 
@@ -439,7 +446,7 @@ macros {
         timesusint: timesusint {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&hm TILDE PLUS>, <&kp STAR>;
+            bindings = <&kp PLUS>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
             // US
@@ -595,11 +602,11 @@ macros {
       symusint_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp AT           ___          ___           ___        &kp CARET      &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
+               &kp AT           ___       &backtick    &caretspace &td_lessgreaterus   &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-               &hm F1 N1   &number2us    &number3us     &number4us   &kp EN_SHARP_S &td_lessgreaterus &number7us    &number8us   &number9us     &number0us
+               &hm F1 N1   &number2us    &number3us     &number4us   &kp N5              &number6      &number7us    &number8us   &number9us     &number0us
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                ___          &kp F11        &kp F12   &timesusint         ___          &tickusint   &hm PIPE MINUS     ___           ___           ___
+                ___          &kp F11        &kp F12   &timesusint    &kp TILDE            &kp PIPE     &kp MINUS     ___           ___           ___
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                            ___           ___               ___          ___
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
