@@ -64,24 +64,7 @@
 
     combos {
         compatible = "zmk,combos";
-            combo_five {
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&kp N5>;
-            layers = <BASEUSINT BASEUS BASEDE BASEIT SYMUSINT SYMUS SYMDE SYMIT>;
-        };
-            combo_sixde {
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&kp N6>;
-            layers = <BASEDE BASEIT SYMDE SYMIT>;
-        };
-            combo_sixus {
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&number6us>; // LS(6)->&
-            layers = <BASEUSINT BASEUS SYMUSINT SYMUS>;
-        };
+ 
             combo_up {
             timeout-ms = <arrowcombotime>;
             key-positions = <11 12 13>;
@@ -161,6 +144,13 @@ macros {
           bindings
             = <&macro_tap &kp S &kp E &kp T &kp X &kp K &kp B &kp M &kp A &kp P &kp SPACE &kp U &kp S &kp SPACE &kp I &kp N &kp T &kp L>
             ;
+        };
+        lucacordes_url: lucacordes_url {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp L &kp U &kp C &kp A &kp C &kp O &kp R &kp D &kp E &kp S &kp DOT &kp C &kp O &kp M &kp SLASH &kp K &kp E &kp Y &kp M &kp A &kp P &kp DOT &kp P &kp D &kp F>
+                ;
         };
             //[]
     bracketde: bracketde {
@@ -691,7 +681,7 @@ macros {
     adjust_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 XXX       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &out OUT_TOG         &usintl         XXX           XXX           XXX           XXX
+                 XXX       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &out OUT_TOG         &usintl      &lucacordes_url  XXX           XXX           XXX
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
               &kp CAPS     &bt BT_SEL 3 &bt BT_SEL 4       XXX        &bt BT_CLR       &tog GAME         XXX           XXX           XXX           XXX
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
