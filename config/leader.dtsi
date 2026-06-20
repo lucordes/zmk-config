@@ -18,6 +18,7 @@
 ZMK_LEADER_SEQUENCE(de_ae,      &kp EN_A_UMLAUT,        A)  // ä //for windows
 ZMK_LEADER_SEQUENCE(de_oe,      &kp EN_O_UMLAUT,        O)  // ö
 ZMK_LEADER_SEQUENCE(de_ue,      &kp EN_U_UMLAUT,        U)  // ü
+ZMK_LEADER_SEQUENCE(de_ss,      &kp EN_S_UMLAUT,        S)  // ß
 ZMK_LEADER_SEQUENCE(u_de_ae,      &uc UC_DE_AE,        U A)  // ä
 ZMK_LEADER_SEQUENCE(u_de_oe,      &uc UC_DE_OE,        U O)  // ö
 ZMK_LEADER_SEQUENCE(u_de_ue,      &uc UC_DE_UE,        U U)  // ü
