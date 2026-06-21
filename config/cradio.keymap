@@ -576,7 +576,7 @@ macros {
       symusint_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp AT      &kp GRAVE       &leader     &caretcpace &td_lessgreaterus  &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
+               &kp AT      &kp GRAVE       &leader     &caretspace &td_lessgreaterus  &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1   &number2us    &number3us     &number4us   &kp N5              &number6us   &number7us    &number8us   &number9us     &number0us
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
