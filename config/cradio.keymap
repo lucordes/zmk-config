@@ -35,18 +35,14 @@
 #define XXX &none
 #define ___ &trans
 
-#define BASEUSINT 0
-#define BASEUS 1
-#define BASEDE 2
-#define BASEIT 3
-#define SYMUSINT 4
-#define SYMUS 5
-#define SYMDE 6
-#define SYMIT 7
-#define NAV 8
-#define NUMPAD 9
-#define ADJ 10
-#define GAME 11
+#define BASEUS 0
+#define BASEDE 1
+#define SYMUS 2
+#define SYMDE 3
+#define NAV 4
+#define NUMPAD 5
+#define ADJ 6
+#define GAME 7
 
 
 #define arrowcombotime 10
@@ -112,19 +108,6 @@
     };
 
 
-            //US base inherits from us int layer. Most stays except ' "
-            // instead of that we can also just copy all the stuff that could be the same likeh we do it in the italian layer.
-            // There we use some german numbers in SYMIT. Both approaches are possible and valid.
-            // "When configured as a then-layer, a layer's activation status is entirely controlled by the conditional layers"
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <BASEUS SYMUSINT>;
-            then-layer = <SYMUS>;
-        };
-    };
-
-
 
 //macros
 
@@ -147,7 +130,7 @@ macros {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &leader &to BASEUSINT>
+        = <&macro_tap &leader &to BASEUS>
         ;
     };
             //[]
@@ -198,14 +181,6 @@ macros {
         = <&macro_tap &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>
         ;
     };
-            //{}
-    braceit: braceit {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-        = <&macro_tap &kp IT_LEFT_BRACE &kp IT_RIGHT_BRACE &kp LEFT>
-        ;
-    };
             //()
     parenus: parenus {
     compatible = "zmk,behavior-macro";
@@ -214,14 +189,7 @@ macros {
         = <&macro_tap &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>
         ;
     };
-            //[]
-    bracketit: bracketit {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-        = <&macro_tap &kp IT_LEFT_BRACKET &kp IT_RIGHT_BRACKET &kp LEFT>
-        ;
-    };
+
             //<>
     lessgreaterus: lessgreaterus {
     compatible = "zmk,behavior-macro";
@@ -366,28 +334,8 @@ macros {
             bindings = <&hm F10 N0>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-            // Italian shares some with german
-           //3'
-        number3it: number3it {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&hm F3 N3>, <&kp IT_SQT >;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-            //8#
-        number8it: number8it {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&hm F8 N8>, <&kp IT_HASH>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-            // ´`
-        tickusint: tickusint {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EN_ACUTE>, <&kp EN_GRAVE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+  
+
             // ~+ *
         timesusint: timesusint {
             compatible = "zmk,behavior-mod-morph";
@@ -459,24 +407,7 @@ macros {
             bindings = <&hm DE_RIGHT_PARENTHESIS DE_LEFT_PARENTHESIS>, <&parende>;
         };
 
-            // Italian is partly similar to german
-            //[]
-        td_bracketit: td_bracketit {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&hm IT_RIGHT_BRACKET IT_LEFT_BRACKET>, <&bracketit>;
-        };
-
-            //{}
-        td_braceit: td_braceit {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&hm IT_RIGHT_BRACE IT_LEFT_BRACE>, <&braceit>;
-        };
-
-
+   
     };
 
 
@@ -489,7 +420,7 @@ macros {
   keymap {
     compatible = "zmk,keymap";
 
-    baseusint_layer {
+    baseus_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                  &kp Q      &hm ESC W    &hm LSHIFT F    &kp P         &kp B             &kp J          &kp L        &kp U       &hm ESC Y  &kp LC(BSPC)
@@ -498,24 +429,12 @@ macros {
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &lt NUMPAD Z   &hm LALT X      &kp C      &hm LCTRL D   &hm LA(F4) V        &kp K       &hm RALT H    &germanStyeComma &germanStyleDot &kp BSPC
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                       &hmhold NAV TAB   &kp LSHFT    &lt SYMUSINT SPC &kp LC(BSPC)
+                                                       &hmhold NAV TAB   &kp LSHFT    &lt SYMUS SPC &kp LC(BSPC)
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
 
-    baseus_layer {
-      bindings = <
-        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 ___           ___           ___           ___           ___               ___           ___           ___           ___           ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___           ___           ___           ___           ___               ___           ___           ___           ___           ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___           ___           ___           ___           ___               ___           ___           ___           ___           ___
-        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           ___           ___        &lt SYMUSINT SPC     ___
-        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-      >;
-    };
+
 
     basede_layer {
       bindings = <
@@ -532,23 +451,11 @@ macros {
     };
         
     
-    baseit_layer {
+
+      symus_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 ___           ___           ___           ___           ___               ___           ___           ___           ___           ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___           ___           ___           ___           ___               ___           ___           ___           ___           ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___           ___           ___           ___           ___               ___           ___        &kp COMMA       &kp DOT        ___
-        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           ___           ___           &lt SYMIT SPC     ___
-        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-      >;
-    };
-      symusint_layer {
-      bindings = <
-        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp AT      &kp GRAVE       &leadermacro &kp CARET &td_lessgreaterus  &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
+               &kp AT      &kp GRAVE     &leadermacro &kp CARET &td_lessgreaterus  &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1   &number2us    &number3us     &number4us   &kp N5              &number6us   &number7us    &number8us   &number9us     &number0us
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -559,19 +466,7 @@ macros {
       >;
     };
 
-      symus_layer {
-      bindings = <
-        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 ___            ___          ___           ___           ___               ___           ___           ___           ___           ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___     &number2us &number3us     ___           ___               ___           ___           ___           ___           ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___            ___          ___           ___           ___               ___           ___           ___           ___           ___
-        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           ___           ___               ___          ___
-        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-      >;
-    };
+
     symde_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -585,21 +480,6 @@ macros {
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
-
-    symit_layer {
-      bindings = <
-        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp DE_AT   &kp IT_A_GRAVE  &kp IT_U_GRAVE  &kp IT_I_GRAVE  &kp IT_CARET &td_bracketit &td_braceit &td_parende  &kp IT_BACKSLASH     ___
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-               &hm F1 N1   &hm F2 N2    &number3it     &number4de    ___   &td_lessgreaterde   &hm F7 N7    &number8it    &number9de     &hm F10 N0
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp IT_O_GRAVE &hm IT_E_ACUTE IT_E_GRAVE &kp IT_C_CEDILLA &kp IT_PLUS ___          ___ &hm IT_PIPE IT_MINUS ___           ___           ___
-        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           ___           ___               ___          ___
-        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-      >;
-    };
-
 
 
     nav_layer {
