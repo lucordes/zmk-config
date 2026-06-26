@@ -133,7 +133,7 @@ macros {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
-            = <&macro_tap &kp S &kp E &kp T &kp X &kp K &kp B &kp M &kp A &kp P &kp SPACE &kp U &kp S &kp SPACE &kp I &kp N &kp T &kp L>
+            = <&macro_tap &kp S &kp E &kp T &kp X &kp K &kp B &kp M &kp A &kp P &kp SPACE &kp MINUS &kp L &kp A &kp Y &kp O &kp U &kp T &kp SPACE &kp U &kp S &kp SPACE &kp MINUS &kp V &kp A &kp R &kp I &kp A &kp N &kp T &kp SPACE &kp A &kp L &kp T &kp G &kp R &kp MINUS &kp I &kp N &kp T &kp L>
             ;
         };
         lucacordes_url: lucacordes_url {
@@ -231,27 +231,6 @@ macros {
         ;
     };
 
-    caretspace: caretspace {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings 
-        = <&macro_tap &kp CARET &kp SPC> 
-        ;
-    };
-    sqtspace: sqtspace {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings 
-        = <&macro_tap &kp SQT &kp SPC> 
-        ;
-    };
-    dqtspace: dqtspace {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings 
-        = <&macro_tap &kp DQT &kp SPC> 
-        ;
-    };
 
 
 };
@@ -331,28 +310,14 @@ macros {
 
             // US Numbers
             //2"
-        number2us: number2us {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&hm F2 N2>, <&dqtspace>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-            //2"
-        number2usbase: number2usbase{
+        number2us: number2us{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&hm F2 N2>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
             //3'
-        number3us: number3us {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&hm F3 N3>, <&sqtspace>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-            //3'
-        number3usbase: number3usbase{
+        number3us: number3us{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&hm F3 N3>, <&kp SQT>;
@@ -583,7 +548,7 @@ macros {
       symusint_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp AT      &kp GRAVE       &leadermacro &caretspace &td_lessgreaterus  &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
+               &kp AT      &kp GRAVE       &leadermacro &kp CARET &td_lessgreaterus  &td_bracketus   &td_braceus   &td_parenus   &kp BACKSLASH     ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1   &number2us    &number3us     &number4us   &kp N5              &number6us   &number7us    &number8us   &number9us     &number0us
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -599,7 +564,7 @@ macros {
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                  ___            ___          ___           ___           ___               ___           ___           ___           ___           ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 ___     &number2usbase &number3usbase     ___           ___               ___           ___           ___           ___           ___
+                 ___     &number2us &number3us     ___           ___               ___           ___           ___           ___           ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  ___            ___          ___           ___           ___               ___           ___           ___           ___           ___
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
