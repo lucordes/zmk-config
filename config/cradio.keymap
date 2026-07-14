@@ -133,6 +133,14 @@ macros {
         = <&macro_tap &leader &to BASEUS>
         ;
     };
+    leadermacroger: leadermacroger {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_tap &leader &kp G &to BASEUS>
+        ;
+    };
+
             //[]
     bracketde: bracketde {
     compatible = "zmk,behavior-macro";
@@ -470,11 +478,11 @@ macros {
     symde_layer {
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp DE_AT   &kp DE_A_UMLAUT &kp DE_U_UMLAUT    ___      &kp DE_CARET   &td_bracketde &td_bracede &td_parende &kp DE_BACKSLASH    ___
+            &kp DE_AT   &kp DE_GRAVE &leadermacroger    &kp DE_CARET &td_lessgreaterde  &td_bracketde &td_bracede &td_parende &kp DE_BACKSLASH    ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &hm F1 N1   &hm F2 N2    &number3de        &number4de    &kp DE_SZ   &td_lessgreaterde &hm F7 N7 &number8de   &number9de     &hm F10 N0
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp DE_O_UMLAUT      &kp F11       &kp F12  &hm DE_TILDE DE_PLUS ___          &kp DE_ACUTE &hm DE_PIPE DE_MINUS ___           ___           ___
+                 ___        &kp F11        &kp F12 &hm DE_TILDE DE_PLUS  ___               ___   &hm DE_PIPE DE_MINUS ___           ___           ___
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                            ___           ___               ___          ___
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
