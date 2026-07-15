@@ -137,7 +137,7 @@ macros {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
-        = <&macro_tap &leader &kp G &to BASEUS>
+        = <&macro_tap &leader &kp G &to BASEDE>
         ;
     };
 
@@ -493,7 +493,7 @@ macros {
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
             &kp DE_AT   &gergravetilde &leadermacroger    &kp DE_CARET &td_lessgreaterde  &td_bracketde &td_bracede &td_parende  &gerbackslashpipe   ___
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-               &hm F1 N1   &hm F2 N2    &number3de        &number4de    &kp DE_SZ   &td_lessgreaterde &hm F7 N7 &number8de   &number9de     &hm F10 N0
+               &hm F1 N1   &hm F2 N2    &number3de        &number4de    &kp N5           &kp N6      &hm F7 N7      &number8de   &number9de     &hm F10 N0
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  ___        &kp F11        &kp F12 &hm DE_TILDE DE_PLUS  ___               ___   &hm DE_PIPE DE_MINUS ___           ___           ___
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
