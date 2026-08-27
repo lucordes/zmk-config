@@ -25,7 +25,6 @@ include:
     shield: cradio_right
   - board: seeeduino_xiao_ble
     shield: cradio_dongle
-    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: cradio_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
@@ -38,7 +37,6 @@ include:
     artifact-name: unibodynotcentral
   - board: seeeduino_xiao_ble
     shield: unibody_dongle
-    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: settings_reset
   - board: seeeduino_xiao_ble
