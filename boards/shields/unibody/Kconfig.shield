@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_UNIBODY
-    def_bool $(shields_list_contains,unibody,unibody_dongle)
+    def_bool $(shields_list_contains,unibody_dongle)
